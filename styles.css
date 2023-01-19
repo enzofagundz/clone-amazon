@@ -1,3 +1,51 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.item-nav-mid {
+    @apply px-2 py-1 mr-4 border border-transparent rounded-sm;
+}
+
+.item-nav-mid:hover {
+    @apply border-white;
+}
+
+.address-container {
+    @apply flex items-center px-2 py-2 border border-transparent rounded-sm;
+}
+
+.address-container:hover {
+    @apply border-white;
+}
+
+.item-nav-bottom {
+    @apply px-3 py-1 border-b-2 border-transparent;
+}
+
+.item-nav-bottom:hover {
+    @apply border-orange-650 text-orange-650;
+}
+
+.btn-amazon-prime {
+    @apply items-center block w-full h-12 px-3 py-3 text-sm text-center border border-yellow-700 rounded md:text-xs bg-yellow-350;
+}
+
+.text-amazon-prime {
+    @apply pr-2 mt-10 mb-4 font-bold leading-5 text-center border-gray-300;
+}
+
+/* Media queries */
+
+@screen md {
+    .address-container {
+        @apply py-0;
+    }
+
+    .btn-amazon-prime {
+        @apply flex w-auto h-8 py-0 ml-10 text-xs;
+    }
+
+    .text-amazon-prime {
+        @apply w-3/4 mt-0 mb-0 border-r-2; 
+    }
+}
