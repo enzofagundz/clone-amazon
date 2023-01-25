@@ -34,6 +34,9 @@
     @apply pr-2 mt-10 mb-4 font-bold leading-5 text-center border-gray-300;
 }
 
+.item-footer-inf {
+    @apply hidden mb-10 text-gray-600;
+}
 /* Media queries */
 
 @screen md {
@@ -47,5 +50,9 @@
 
     .text-amazon-prime {
         @apply w-3/4 mt-0 mb-0 border-r-2; 
+    }
+
+    .item-footer-inf {
+        @apply block;
     }
 }
